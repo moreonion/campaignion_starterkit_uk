@@ -75,8 +75,8 @@ class Supporter implements ContactTypeInterface {
         $map['source'] = new TagField('source_tag');
         $map['tags'] = new TagsField('supporter_tags', TRUE);
         $map['mp_const'] = new WrapperField('mp_constituency');
-        $map['mp_party'] = new WrapperField('mp_party');
-        $map['mp_name'] = new TagField('mp_party');
+        $map['mp_party'] = new TagField('mp_party');
+        $map['mp_name'] = new WrapperField('mp_salutation');
         $map['dev_country'] = new TagField('mp_country');
         break;
       case 'mailchimp':
