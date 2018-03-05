@@ -76,8 +76,8 @@ class Supporter implements ContactTypeInterface {
         $map['tags'] = new TagsField('supporter_tags', TRUE);
         $map['mp_const'] = new WrapperField('mp_constituency');
         $map['mp_party'] = new WrapperField('mp_party');
-        $map['mp_name'] = new WrapperField('mp_party');
-        $map['dev_country'] = new WrapperField('mp_country');
+        $map['mp_name'] = new TagField('mp_party');
+        $map['dev_country'] = new TagField('mp_country');
         break;
       case 'mailchimp':
         $map['EMAIL'] = new WrapperField('email');
@@ -98,9 +98,9 @@ class Supporter implements ContactTypeInterface {
         $map['SOURCE'] = new TagField('source_tag');
         $map['TAGS'] = new TagsField('supporter_tags', TRUE);
         $map['MP_CONST'] = new WrapperField('mp_constituency');
-        $map['MP_PARTY'] = new WrapperField('mp_party');
+        $map['MP_PARTY'] = new TagField('mp_party');
         $map['MP_NAME'] = new WrapperField('mp_salutation');
-        $map['DEV_COUNTRY'] = new WrapperField('mp_country');
+        $map['DEV_COUNTRY'] = new TagField('mp_country');
         break;
       case 'campaignion_manage':
         $address_mapping = array(
@@ -129,9 +129,9 @@ class Supporter implements ContactTypeInterface {
         $map['supporter_tags']               = new TagsField('supporter_tags');
         $map['field_preferred_language']     = new WrapperField('field_preferred_language');
         $map['mp_constituency']              = new WrapperField('mp_constituency');
-        $map['mp_party']                     = new WrapperField('mp_party');
+        $map['mp_party']                     = new TagField('mp_party');
         $map['mp_salutation']                = new WrapperField('mp_salutation');
-        $map['mp_country']                   = new WrapperField('mp_country');
+        $map['mp_country']                   = new TagField('mp_country');
         break;
       case 'dotmailer':
         $map['salutation'] = new MappedWrapperField('field_salutation', $salutation_map, FALSE);
@@ -150,9 +150,9 @@ class Supporter implements ContactTypeInterface {
         $map['source'] = new TagField('source_tag');
         $map['tags'] = new TagsField('supporter_tags', TRUE);
         $map['mp_const'] = new WrapperField('mp_constituency');
-        $map['mp_party'] = new WrapperField('mp_party');
+        $map['mp_party'] = new TagField('mp_party');
         $map['mp_name'] = new WrapperField('mp_salutation');
-        $map['dev_country'] = new WrapperField('mp_country');
+        $map['dev_country'] = new TagField('mp_country');
         break;
     }
     if ($map) {
