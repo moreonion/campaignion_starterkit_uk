@@ -21,7 +21,7 @@ function campaignion_supporter_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'MP data',
-    'weight' => '41',
+    'weight' => '17',
     'children' => array(
       0 => 'mp_country',
       1 => 'mp_party',

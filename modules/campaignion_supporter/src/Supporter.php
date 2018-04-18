@@ -4,6 +4,7 @@ namespace Drupal\campaignion_supporter;
 
 use Drupal\campaignion\ContactTypeInterface;
 use Drupal\campaignion\CRM\Import\Field\Address;
+use Drupal\campaignion\CRM\Import\Field\BooleanOptIn;
 use Drupal\campaignion\CRM\Import\Field\Date;
 use Drupal\campaignion\CRM\Import\Field\EmailBulk;
 use Drupal\campaignion\CRM\Import\Field\Field;
@@ -15,6 +16,7 @@ use Drupal\campaignion\CRM\Export\SingleValueField;
 use Drupal\campaignion\CRM\Export\WrapperField;
 use Drupal\campaignion\CRM\Export\MappedWrapperField;
 use Drupal\campaignion\CRM\Export\AddressField;
+use Drupal\campaignion\CRM\Export\BooleanField;
 use Drupal\campaignion\CRM\Export\DateField;
 use Drupal\campaignion\CRM\Export\KeyedField;
 use Drupal\campaignion\CRM\Export\TagField;
@@ -59,7 +61,8 @@ class Supporter implements ContactTypeInterface {
         new Phone('field_phone_number', 'phone_number'),
         new Phone('field_phone_number', 'mobile_number'),
         new EmailBulk('redhen_contact_email', 'email', 'email_newsletter'),
-        new Field('field_direct_mail_newsletter', 'direct_mail_newsletter'),
+        new BooleanOptIn('field_opt_in_phone', 'phone_opt_in'),
+        new BooleanOptIn('field_opt_in_post', 'post_opt_in'),
         new Field('field_preferred_language', 'language'),
       ));
     }
@@ -105,6 +108,8 @@ class Supporter implements ContactTypeInterface {
         $map['mp_party'] = new TagField('mp_party');
         $map['mp_name'] = new WrapperField('mp_salutation');
         $map['dev_country'] = new TagField('mp_country');
+        $map['phoneopt'] = new BooleanField('field_opt_in_phone');
+        $map['postopt'] = new BooleanField('field_opt_in_post');
         break;
 
       case 'mailchimp':
@@ -130,6 +135,8 @@ class Supporter implements ContactTypeInterface {
         $map['MP_PARTY'] = new TagField('mp_party');
         $map['MP_NAME'] = new WrapperField('mp_salutation');
         $map['DVCOUNTRY'] = new TagField('mp_country');
+        $map['PHONEOPT'] = new BooleanField('field_opt_in_phone');
+        $map['POSTOPT'] = new BooleanField('field_opt_in_post');
         break;
 
       case 'campaignion_manage':
@@ -154,7 +161,6 @@ class Supporter implements ContactTypeInterface {
         $map['updated']                      = new DateField('updated', '%Y-%m-%d');
         $map['field_ip_adress']              = new WrapperField('field_ip_adress');
         $map['field_phone_number']           = new WrapperField('field_phone_number');
-        $map['field_direct_mail_newsletter'] = new WrapperField('field_direct_mail_newsletter');
         $map['field_social_network_links']   = new WrapperField('field_social_network_links');
         $map['source_tag']                   = new TagField('source_tag');
         $map['supporter_tags']               = new TagsField('supporter_tags');
@@ -163,6 +169,8 @@ class Supporter implements ContactTypeInterface {
         $map['mp_party']                     = new TagField('mp_party');
         $map['mp_salutation']                = new WrapperField('mp_salutation');
         $map['mp_country']                   = new TagField('mp_country');
+        $map['field_opt_in_phone']           = new BooleanField('field_opt_in_phone');
+        $map['field_opt_in_post']            = new BooleanField('field_opt_in_post');
         break;
 
       case 'dotmailer':
@@ -185,6 +193,8 @@ class Supporter implements ContactTypeInterface {
         $map['mp_party'] = new TagField('mp_party');
         $map['mp_name'] = new WrapperField('mp_salutation');
         $map['dev_country'] = new TagField('mp_country');
+        $map['phoneopt'] = new BooleanField('field_opt_in_phone');
+        $map['postopt'] = new BooleanField('field_opt_in_post');
         break;
 
     }
