@@ -80,6 +80,7 @@ class Supporter implements ContactTypeInterface {
         $map['dev_country'] = new TagField('mp_country');
         break;
       case 'mailchimp':
+        // MailChimp merge tags have a maximum of 10 characters.
         $map['EMAIL'] = new WrapperField('email');
         $map['FNAME'] = new SingleValueField('first_name');
         $map['LNAME'] = new SingleValueField('last_name');
@@ -100,7 +101,7 @@ class Supporter implements ContactTypeInterface {
         $map['MP_CONST'] = new WrapperField('mp_constituency');
         $map['MP_PARTY'] = new TagField('mp_party');
         $map['MP_NAME'] = new WrapperField('mp_salutation');
-        $map['DEV_COUNTRY'] = new TagField('mp_country');
+        $map['DVCOUNTRY'] = new TagField('mp_country');
         break;
       case 'campaignion_manage':
         $address_mapping = array(
