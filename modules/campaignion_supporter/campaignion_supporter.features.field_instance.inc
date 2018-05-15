@@ -67,7 +67,7 @@ function campaignion_supporter_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -127,54 +127,6 @@ function campaignion_supporter_field_default_field_instances() {
       ),
       'type' => 'date_select',
       'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'redhen_contact-contact-field_direct_mail_newsletter'.
-  $field_instances['redhen_contact-contact-field_direct_mail_newsletter'] = array(
-    'bundle' => 'contact',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => 'Set this if the contact wants to receive direct mails',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'redhen_contact',
-    'exclude_cv' => 0,
-    'field_name' => 'field_direct_mail_newsletter',
-    'label' => 'Direct Mail Newsletter',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'exclude_cv' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 5,
     ),
   );
 
@@ -259,7 +211,101 @@ function campaignion_supporter_field_default_field_instances() {
         'size' => 16,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-contact-field_opt_in_phone'.
+  $field_instances['redhen_contact-contact-field_opt_in_phone'] = array(
+    'bundle' => 'contact',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_opt_in_phone',
+    'label' => 'Phone opt-in',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'redhen_contact-contact-field_opt_in_post'.
+  $field_instances['redhen_contact-contact-field_opt_in_post'] = array(
+    'bundle' => 'contact',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'redhen_contact',
+    'field_name' => 'field_opt_in_post',
+    'label' => 'Postal opt-in',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 9,
     ),
   );
 
@@ -303,7 +349,7 @@ function campaignion_supporter_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -348,7 +394,7 @@ function campaignion_supporter_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 11,
     ),
   );
 
@@ -434,7 +480,7 @@ function campaignion_supporter_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 12,
     ),
   );
 
@@ -737,7 +783,7 @@ function campaignion_supporter_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 13,
+      'weight' => 15,
     ),
   );
 
@@ -779,7 +825,7 @@ function campaignion_supporter_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 14,
     ),
   );
 
@@ -789,16 +835,16 @@ function campaignion_supporter_field_default_field_instances() {
   t('Constituency');
   t('Date of birth');
   t('Devolved country');
-  t('Direct Mail Newsletter');
   t('Email');
   t('Gender');
   t('IP-Adress');
   t('MP party');
   t('MP salutation');
   t('Phone number');
+  t('Phone opt-in');
+  t('Postal opt-in');
   t('Preferred language');
   t('Salutation');
-  t('Set this if the contact wants to receive direct mails');
   t('Social Network Links');
   t('Source tag');
   t('Tags');
