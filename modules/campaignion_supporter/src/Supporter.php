@@ -209,7 +209,7 @@ class Supporter implements ContactTypeInterface {
         $map['mp_country']                   = $labels->fromExporter(new TagField('mp_country'));
         $map['field_opt_in_phone']           = $labels->fromExporter(new BooleanField('field_opt_in_phone'));
         $map['field_opt_in_post']            = $labels->fromExporter(new BooleanField('field_opt_in_post'));
-        return new CsvExporter($map);;
+        return new CsvExporter($map);
 
       case 'dotmailer':
         $map['salutation'] = new MappedWrapperField('field_salutation', $salutation_map, FALSE);
