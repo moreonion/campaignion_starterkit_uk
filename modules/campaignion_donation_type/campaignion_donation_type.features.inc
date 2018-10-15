@@ -53,7 +53,7 @@ function campaignion_donation_type_default_payment_method() {
     "title_specific" : "Manual direct debit",
     "title_generic" : "Direct debit",
     "uid" : 1,
-    "controller_class_name" : "\\\\Drupal\\\\manual_direct_debit\\\\AccountDataController"
+    "controller_class_name" : "\\\\Drupal\\\\manual_direct_debit_uk\\\\AccountDataController"
   }');
   return $items;
 }
