@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * campaignion_donation_type.features.uuid_node.inc
@@ -34,6 +35,7 @@ function campaignion_donation_type_uuid_features_default_content() {
   'field_main_image' => array(),
   'field_reference_to_campaign' => array(),
   'field_thank_you_pages' => array(),
+  'opengraph_meta_image' => array(),
   'pgbar_default' => array(
     'und' => array(
       0 => array(
@@ -108,6 +110,8 @@ function campaignion_donation_type_uuid_features_default_content() {
     'preview_message' => '',
     'preview_message_format' => NULL,
     'preview_excluded_components' => array(),
+    'confirm_email_request_lifetime' => 7776000,
+    'confirm_email_delete_submissions' => 0,
     'first_button_text' => 'Make your donation!',
     'next_button_text' => 'Next',
     'webform_ajax' => 1,
@@ -160,7 +164,6 @@ function campaignion_donation_type_uuid_features_default_content() {
     ),
     'components' => array(
       1 => array(
-        'nid' => 1,
         'cid' => 1,
         'pid' => 0,
         'form_key' => 'donation_amount',
@@ -191,10 +194,8 @@ function campaignion_donation_type_uuid_features_default_content() {
         ),
         'required' => 1,
         'weight' => 1,
-        'page_num' => 1,
       ),
       2 => array(
-        'nid' => 1,
         'cid' => 2,
         'pid' => 0,
         'form_key' => 'donation_interval',
@@ -225,10 +226,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 2,
-        'page_num' => 1,
       ),
       3 => array(
-        'nid' => 1,
         'cid' => 3,
         'pid' => 0,
         'form_key' => 'your_details',
@@ -246,10 +245,8 @@ y|yearly
         ),
         'required' => 0,
         'weight' => 3,
-        'page_num' => 2,
       ),
       4 => array(
-        'nid' => 1,
         'cid' => 4,
         'pid' => 0,
         'form_key' => 'first_name',
@@ -278,10 +275,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 4,
-        'page_num' => 2,
       ),
       5 => array(
-        'nid' => 1,
         'cid' => 5,
         'pid' => 0,
         'form_key' => 'last_name',
@@ -310,10 +305,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 5,
-        'page_num' => 2,
       ),
       9 => array(
-        'nid' => 1,
         'cid' => 9,
         'pid' => 0,
         'form_key' => 'email',
@@ -340,10 +333,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 6,
-        'page_num' => 2,
       ),
       15 => array(
-        'nid' => 1,
         'cid' => 15,
         'pid' => 0,
         'form_key' => 'your_address',
@@ -386,11 +377,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 8,
-        'mandatory' => 0,
-        'page_num' => 3,
       ),
       7 => array(
-        'nid' => 1,
         'cid' => 7,
         'pid' => 0,
         'form_key' => 'street_address',
@@ -418,10 +406,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 9,
-        'page_num' => 3,
       ),
       8 => array(
-        'nid' => 1,
         'cid' => 8,
         'pid' => 0,
         'form_key' => 'street_address_2',
@@ -449,10 +435,8 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 10,
-        'page_num' => 3,
       ),
       10 => array(
-        'nid' => 1,
         'cid' => 10,
         'pid' => 0,
         'form_key' => 'payment',
@@ -473,7 +457,6 @@ y|yearly
         'page_num' => 4,
       ),
       11 => array(
-        'nid' => 1,
         'cid' => 11,
         'pid' => 0,
         'form_key' => 'paymethod_select',
@@ -500,13 +483,11 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 12,
-        'mandatory' => 1,
-        'page_num' => 4,
       ),
     ),
     'conditionals' => array(),
   ),
-  'date' => '2012-07-23 14:10:30 +0000',
+  'date' => '2012-07-23 16:10:30 +0200',
   'user_uuid' => '59e16a84-5bfa-438b-be8f-782a0af74750',
 );
   return $nodes;
