@@ -57,6 +57,7 @@ class Supporter implements ContactTypeInterface {
         new Date('field_date_of_birth', 'date_of_birth'),
         new Address('field_address', array(
           'thoroughfare'        => 'street_address',
+          'premise'             => 'street_address_2',
           'postal_code'         => ['zip_code', 'postcode'],
           'locality'            => 'city',
           'administrative_area' => 'state',
