@@ -32,7 +32,7 @@ function campaignion_supporter_field_group_info() {
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
-        'description' => '',
+        'description' => 'Data in these fields will be added automatically if a UK address with a valid postcode is found in the supporter record. The data is updated and overwritten whenever the contact in modified.',
         'classes' => 'group-mp-data field-group-fieldset',
         'required_fields' => 1,
         'id' => '',
