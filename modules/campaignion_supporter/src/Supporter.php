@@ -116,6 +116,10 @@ class Supporter implements ContactTypeInterface {
         $map['dev_country'] = new TagField('mp_country');
         $map['phoneopt'] = new BooleanField('field_opt_in_phone');
         $map['postopt'] = new BooleanField('field_opt_in_post');
+        $map['oneoffval'] = new WrapperField('donation_latest_one_off.donation_value');
+        $map['oneoffdate'] = new DateField('donation_latest_one_off.donation_date', '%Y-%m-%d');
+        $map['regval'] = new WrapperField('donation_latest_regular.donation_value');
+        $map['regdate'] = new DateField('donation_latest_regular.donation_date', '%Y-%m-%d');
         break;
 
       case 'mailchimp':
@@ -144,6 +148,10 @@ class Supporter implements ContactTypeInterface {
         $map['DVCOUNTRY'] = new TagField('mp_country');
         $map['PHONEOPT'] = new BooleanField('field_opt_in_phone');
         $map['POSTOPT'] = new BooleanField('field_opt_in_post');
+        $map['ONEOFFVAL'] = new WrapperField('donation_latest_one_off.donation_value');
+        $map['ONEOFFDATE'] = new DateField('donation_latest_one_off.donation_date', '%Y-%m-%d');
+        $map['REGVAL'] = new WrapperField('donation_latest_regular.donation_value');
+        $map['REGDATE'] = new DateField('donation_latest_regular.donation_date', '%Y-%m-%d');
         break;
 
       case 'campaignion_manage':
@@ -179,6 +187,10 @@ class Supporter implements ContactTypeInterface {
         $map['mp_country']                   = new TagField('mp_country');
         $map['field_opt_in_phone']           = new BooleanField('field_opt_in_phone');
         $map['field_opt_in_post']            = new BooleanField('field_opt_in_post');
+        $map['donation_latest_one_off.donation_value'] = new WrapperField('donation_latest_one_off.donation_value');
+        $map['donation_latest_one_off.donation_date'] = new DateField('donation_latest_one_off.donation_date', '%Y-%m-%d');
+        $map['donation_latest_regular.donation_value'] = new WrapperField('donation_latest_regular.donation_value');
+        $map['donation_latest_regular.donation_date'] = new DateField('donation_latest_regular.donation_date', '%Y-%m-%d');
         break;
 
       case 'csv':
@@ -214,6 +226,10 @@ class Supporter implements ContactTypeInterface {
         $map['mp_country']                   = $labels->fromExporter(new TagField('mp_country'));
         $map['field_opt_in_phone']           = $labels->fromExporter(new BooleanField('field_opt_in_phone'));
         $map['field_opt_in_post']            = $labels->fromExporter(new BooleanField('field_opt_in_post'));
+        $map['donation_latest_one_off.donation_value'] = new Label(t('Latest one-off donation value'), new WrapperField('donation_latest_one_off.donation_value'));
+        $map['donation_latest_one_off.donation_date'] = new Label(t('Latest one-off donation date'), new DateField('donation_latest_one_off.donation_date', '%Y-%m-%d'));
+        $map['donation_latest_regular.donation_value'] = new Label(t('Latest regular donation value'), new WrapperField('donation_latest_regular.donation_value'));
+        $map['donation_latest_regular.donation_date'] = new Label(t('Latest regular donation deto'), new DateField('donation_latest_regular.donation_date', '%Y-%m-%d'));
         return new CsvExporter($map);
 
       case 'dotmailer':
@@ -239,6 +255,10 @@ class Supporter implements ContactTypeInterface {
         $map['dev_country'] = new TagField('mp_country');
         $map['phoneopt'] = new BooleanField('field_opt_in_phone');
         $map['postopt'] = new BooleanField('field_opt_in_post');
+        $map['oneoffval'] = new WrapperField('donation_latest_one_off.donation_value');
+        $map['oneoffdate'] = new DateField('donation_latest_one_off.donation_date', '%Y-%m-%d');
+        $map['regval'] = new WrapperField('donation_latest_regular.donation_value');
+        $map['regdate'] = new DateField('donation_latest_regular.donation_date', '%Y-%m-%d');
         break;
 
     }
