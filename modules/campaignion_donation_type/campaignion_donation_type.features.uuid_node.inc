@@ -478,12 +478,17 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 12,
+        'mandatory' => 1,
       ),
     ),
     'conditionals' => array(),
   ),
-  'date' => '2012-07-23 16:10:30 +0200',
-  'user_uuid' => '59e16a84-5bfa-438b-be8f-782a0af74750',
+  'path' => array(
+    'pathauto' => FALSE,
+    'alias' => 'content/default-donation-form-template-do-not-delete',
+  ),
+  'date' => '2012-07-23 14:10:30 +0000',
+  'user_uuid' => '9dbdd05e-9e99-4f34-a31b-8685d3f6bcc3',
 );
   return $nodes;
 }
