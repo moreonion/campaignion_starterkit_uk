@@ -48,7 +48,7 @@ function campaignion_donation_type_node_info() {
 function campaignion_donation_type_default_payment_method() {
   $items = array();
   $items['manual_direct_debit'] = entity_import('payment_method', '{
-    "controller_data" : [],
+    "controller_data" : { "day_options" : [ "1", "15", "28" ], "long_account_numbers" : true },
     "enabled" : true,
     "name" : "manual_direct_debit",
     "title_specific" : "Manual direct debit",

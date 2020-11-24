@@ -80,7 +80,6 @@ function campaignion_donation_type_uuid_features_default_content() {
   ),
   'supporter_tags' => array(),
   'webform' => array(
-    'nid' => 1,
     'next_serial' => 1,
     'confirmation' => '',
     'confirmation_format' => NULL,
@@ -110,10 +109,10 @@ function campaignion_donation_type_uuid_features_default_content() {
     'preview_message' => '',
     'preview_message_format' => NULL,
     'preview_excluded_components' => array(),
-    'confirm_email_request_lifetime' => 7776000,
-    'confirm_email_delete_submissions' => 0,
     'first_button_text' => 'Make your donation!',
     'next_button_text' => 'Next',
+    'confirm_email_request_lifetime' => 7776000,
+    'confirm_email_delete_submissions' => 0,
     'webform_ajax' => 1,
     'record_exists' => TRUE,
     'roles' => array(
@@ -122,7 +121,6 @@ function campaignion_donation_type_uuid_features_default_content() {
     ),
     'emails' => array(
       1 => array(
-        'nid' => 1,
         'eid' => 1,
         'email' => 9,
         'subject' => 'Thank you for your donation!',
@@ -140,7 +138,6 @@ function campaignion_donation_type_uuid_features_default_content() {
         'status' => 1,
       ),
       3 => array(
-        'nid' => 1,
         'eid' => 3,
         'email' => 'noreply@example.com',
         'subject' => 'New submission!',
@@ -348,10 +345,8 @@ y|yearly
         ),
         'required' => 0,
         'weight' => 7,
-        'page_num' => 3,
       ),
       6 => array(
-        'nid' => 1,
         'cid' => 6,
         'pid' => 0,
         'form_key' => 'postcode',
@@ -377,6 +372,7 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 8,
+        'mandatory' => 0,
       ),
       7 => array(
         'cid' => 7,
@@ -454,7 +450,6 @@ y|yearly
         ),
         'required' => 0,
         'weight' => 11,
-        'page_num' => 4,
       ),
       11 => array(
         'cid' => 11,
@@ -467,7 +462,7 @@ y|yearly
           'payment_description' => 'Default Payment',
           'selected_payment_methods' => array(),
           'line_items' => array(
-            0 => unserialize('O:49:"Drupal\webform_paymethod_select\PaymethodLineItem":10:{s:13:"amount_source";s:9:"component";s:16:"amount_component";s:1:"1";s:15:"quantity_source";s:5:"fixed";s:18:"quantity_component";N;s:6:"amount";N;s:11:"description";s:8:"Donation";s:21:"description_arguments";a:0:{}s:4:"name";s:8:"donation";s:8:"tax_rate";d:0;s:8:"quantity";i:1;}'),
+            0 => unserialize('O:49:"Drupal\webform_paymethod_select\PaymethodLineItem":11:{s:13:"amount_source";s:9:"component";s:16:"amount_component";s:1:"1";s:15:"quantity_source";s:5:"fixed";s:18:"quantity_component";N;s:10:"recurrence";N;s:6:"amount";N;s:11:"description";s:8:"Donation";s:21:"description_arguments";a:0:{}s:4:"name";s:8:"donation";s:8:"tax_rate";d:0;s:8:"quantity";i:1;}'),
           ),
           'currency_code' => 'GBP',
           'private' => 0,
@@ -483,12 +478,17 @@ y|yearly
         ),
         'required' => 1,
         'weight' => 12,
+        'mandatory' => 1,
       ),
     ),
     'conditionals' => array(),
   ),
-  'date' => '2012-07-23 16:10:30 +0200',
-  'user_uuid' => '59e16a84-5bfa-438b-be8f-782a0af74750',
+  'path' => array(
+    'pathauto' => FALSE,
+    'alias' => 'content/default-donation-form-template-do-not-delete',
+  ),
+  'date' => '2012-07-23 14:10:30 +0000',
+  'user_uuid' => '9dbdd05e-9e99-4f34-a31b-8685d3f6bcc3',
 );
   return $nodes;
 }
