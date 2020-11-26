@@ -78,11 +78,8 @@ function campaignion_email_to_target_type_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 400,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -191,7 +188,7 @@ function campaignion_email_to_target_type_field_default_field_instances() {
           'file_view_mode' => 'teaser',
         ),
         'type' => 'file_rendered',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -459,9 +456,12 @@ function campaignion_email_to_target_type_field_default_field_instances() {
         'weight' => 13,
       ),
       'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'teaser',
+        ),
+        'type' => 'file_rendered',
         'weight' => 0,
       ),
     ),
