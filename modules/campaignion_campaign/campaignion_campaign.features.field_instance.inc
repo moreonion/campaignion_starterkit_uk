@@ -249,6 +249,7 @@ function campaignion_campaign_field_default_field_instances() {
       0 => array(
         'theme' => NULL,
         'layout' => NULL,
+        'reversed' => 0,
       ),
     ),
     'deleted' => 0,
@@ -368,6 +369,8 @@ function campaignion_campaign_field_default_field_instances() {
   // Exported field_instance: 'node-campaign-opengraph_meta_image'.
   $field_instances['node-campaign-opengraph_meta_image'] = array(
     'bundle' => 'campaign',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
     'description' => 'Add an image to be shown on your social media teasers.',
     'display' => array(
