@@ -21,24 +21,24 @@ function campaignion_supporter_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'MP data',
-    'weight' => '17',
     'children' => array(
       0 => 'mp_country',
       1 => 'mp_party',
       2 => 'mp_salutation',
       3 => 'mp_constituency',
     ),
-    'format_type' => 'fieldset',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(
-        'description' => 'Data in these fields will be added automatically if a UK address with a valid postcode is found in the supporter record. The data is updated and overwritten whenever the contact in modified.',
         'classes' => 'group-mp-data field-group-fieldset',
-        'required_fields' => 1,
+        'description' => 'Data in these fields will be added automatically if a UK address with a valid postcode is found in the supporter record. The data is updated and overwritten whenever the contact in modified.',
         'id' => '',
+        'required_fields' => 1,
       ),
     ),
+    'format_type' => 'fieldset',
+    'label' => 'MP data',
+    'weight' => '17',
   );
   $field_groups['group_mp_data|redhen_contact|contact|form'] = $field_group;
 
