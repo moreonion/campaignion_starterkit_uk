@@ -59,6 +59,7 @@ features[field_instance][] = node-target-field_reference_to_campaign
 features[field_instance][] = node-target-field_thank_you_pages
 features[field_instance][] = node-target-layout
 features[field_instance][] = node-target-layout_background_image
+features[field_instance][] = node-target-layout_headline
 features[field_instance][] = node-target-opengraph_meta_image
 features[field_instance][] = node-target-pgbar_default
 features[field_instance][] = node-target-recent_supporters

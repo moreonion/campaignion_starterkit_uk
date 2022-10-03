@@ -615,6 +615,60 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-target-layout_headline'.
+  $field_instances['node-target-layout_headline'] = array(
+    'bundle' => 'target',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'value' => '',
+        'format' => 'plain_text',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Display a big headline on the banner or background.',
+    'display' => array(
+      'cck_blocks' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'layout_headline',
+    'label' => 'Headline',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-target-opengraph_meta_image'.
   $field_instances['node-target-opengraph_meta_image'] = array(
     'bundle' => 'target',
@@ -878,9 +932,11 @@ function campaignion_match_to_target_type_field_default_field_instances() {
   t('Add an image to be shown on your social media teasers.');
   t('Body');
   t('Counter');
+  t('Display a big headline on the banner or background.');
   t('Display a counter, like a progress bar or thermometer for your donation.');
   t('Display a recent supporters box.');
   t('Form intro');
+  t('Headline');
   t('If this is checked this action will be selectable as a template when creating new actions');
   t('Internal page title');
   t('It’s helpful if you add to this message a way for supporters to get in touch with you. That way if they don’t have a target they can bring this to your attention.');
