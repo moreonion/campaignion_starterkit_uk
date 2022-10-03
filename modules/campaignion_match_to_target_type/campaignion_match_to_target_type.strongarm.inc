@@ -14,7 +14,7 @@ function campaignion_match_to_target_type_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__target';
+  $strongarm->name = 'field_bundle_settings_node__match_to_target';
   $strongarm->value = array(
     'extra_fields' => array(
       'display' => array(
@@ -95,88 +95,88 @@ function campaignion_match_to_target_type_strongarm() {
       ),
     ),
   );
-  $export['field_bundle_settings_node__target'] = $strongarm;
+  $export['field_bundle_settings_node__match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'i18n_node_extended_target';
+  $strongarm->name = 'i18n_node_extended_match_to_target';
   $strongarm->value = '1';
-  $export['i18n_node_extended_target'] = $strongarm;
+  $export['i18n_node_extended_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'i18n_node_options_target';
+  $strongarm->name = 'i18n_node_options_match_to_target';
   $strongarm->value = array(
     0 => 'current',
     1 => 'required',
   );
-  $export['i18n_node_options_target'] = $strongarm;
+  $export['i18n_node_options_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_target';
+  $strongarm->name = 'language_content_type_match_to_target';
   $strongarm->value = 0;
-  $export['language_content_type_target'] = $strongarm;
+  $export['language_content_type_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_target';
+  $strongarm->name = 'menu_options_match_to_target';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_target'] = $strongarm;
+  $export['menu_options_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_target';
+  $strongarm->name = 'menu_parent_match_to_target';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_target'] = $strongarm;
+  $export['menu_parent_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_target';
+  $strongarm->name = 'node_options_match_to_target';
   $strongarm->value = array(
     0 => 'status',
     1 => 'promote',
   );
-  $export['node_options_target'] = $strongarm;
+  $export['node_options_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_target';
+  $strongarm->name = 'node_preview_match_to_target';
   $strongarm->value = '0';
-  $export['node_preview_target'] = $strongarm;
+  $export['node_preview_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_target';
+  $strongarm->name = 'node_submitted_match_to_target';
   $strongarm->value = 0;
-  $export['node_submitted_target'] = $strongarm;
+  $export['node_submitted_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'webform_node_target';
+  $strongarm->name = 'webform_node_match_to_target';
   $strongarm->value = 1;
-  $export['webform_node_target'] = $strongarm;
+  $export['webform_node_match_to_target'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'xmlsitemap_settings_node_target';
+  $strongarm->name = 'xmlsitemap_settings_node_match_to_target';
   $strongarm->value = array(
     'priority' => '0.5',
     'status' => '1',
   );
-  $export['xmlsitemap_settings_node_target'] = $strongarm;
+  $export['xmlsitemap_settings_node_match_to_target'] = $strongarm;
 
   return $export;
 }

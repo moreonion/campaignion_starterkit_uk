@@ -13,7 +13,7 @@ include_once 'campaignion_match_to_target_type.features.inc';
  * Implements hook_campaignion_action_info().
  */
 function campaignion_match_to_target_type_campaignion_action_info() {
-  $types['target'] = array(
+  $types['match_to_target'] = array(
     'wizard_class' => '\\Drupal\\campaignion_email_to_target\\Wizard\\Wizard',
     'action_class' => '\\Drupal\\campaignion_email_to_target\\Action',
     'thank_you_page' => array(

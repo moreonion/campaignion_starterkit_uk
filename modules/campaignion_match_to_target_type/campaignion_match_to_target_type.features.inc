@@ -22,7 +22,7 @@ function campaignion_match_to_target_type_ctools_plugin_api($module = NULL, $api
  */
 function campaignion_match_to_target_type_node_info() {
   $items = array(
-    'target' => array(
+    'match_to_target' => array(
       'name' => t('Match to target'),
       'base' => 'node_content',
       'description' => '',

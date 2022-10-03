@@ -11,45 +11,45 @@
 function campaignion_match_to_target_type_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'create target content'.
-  $permissions['create target content'] = array(
-    'name' => 'create target content',
+  // Exported permission: 'create match_to_target content'.
+  $permissions['create match_to_target content'] = array(
+    'name' => 'create match_to_target content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any target content'.
-  $permissions['delete any target content'] = array(
-    'name' => 'delete any target content',
+  // Exported permission: 'delete any match_to_target content'.
+  $permissions['delete any match_to_target content'] = array(
+    'name' => 'delete any match_to_target content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own target content'.
-  $permissions['delete own target content'] = array(
-    'name' => 'delete own target content',
+  // Exported permission: 'delete own match_to_target content'.
+  $permissions['delete own match_to_target content'] = array(
+    'name' => 'delete own match_to_target content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any target content'.
-  $permissions['edit any target content'] = array(
-    'name' => 'edit any target content',
+  // Exported permission: 'edit any match_to_target content'.
+  $permissions['edit any match_to_target content'] = array(
+    'name' => 'edit any match_to_target content',
     'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own target content'.
-  $permissions['edit own target content'] = array(
-    'name' => 'edit own target content',
+  // Exported permission: 'edit own match_to_target content'.
+  $permissions['edit own match_to_target content'] = array(
+    'name' => 'edit own match_to_target content',
     'roles' => array(
       'administrator' => 'administrator',
     ),

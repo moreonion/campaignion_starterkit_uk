@@ -31,7 +31,7 @@ function campaignion_context_context_default_contexts() {
         'donation' => 'donation',
         'email_to_target' => 'email_to_target',
         'petition' => 'petition',
-        'target' => 'target',
+        'match_to_target' => 'match_to_target',
         'webform' => 'webform',
       ),
     ),

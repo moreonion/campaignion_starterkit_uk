@@ -11,9 +11,9 @@
 function campaignion_match_to_target_type_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-target-action_template'.
-  $field_instances['node-target-action_template'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-action_template'.
+  $field_instances['node-match_to_target-action_template'] = array(
+    'bundle' => 'match_to_target',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'If this is checked this action will be selectable as a template when creating new actions',
@@ -56,9 +56,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-body'.
-  $field_instances['node-target-body'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-body'.
+  $field_instances['node-match_to_target-body'] = array(
+    'bundle' => 'match_to_target',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -106,9 +106,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_admin_title'.
-  $field_instances['node-target-field_admin_title'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_admin_title'.
+  $field_instances['node-match_to_target-field_admin_title'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -159,9 +159,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_email_to_target_options'.
-  $field_instances['node-target-field_email_to_target_options'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_email_to_match_to_target_options'.
+  $field_instances['node-match_to_target-field_email_to_target_options'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -210,9 +210,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_form_intro'.
-  $field_instances['node-target-field_form_intro'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_form_intro'.
+  $field_instances['node-match_to_target-field_form_intro'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -264,13 +264,13 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_main_image'.
-  $field_instances['node-target-field_main_image'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_main_image'.
+  $field_instances['node-match_to_target-field_main_image'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Add a large main image or a video to your target action.',
+    'description' => 'Add a large main image or a video to your match_to_target action.',
     'display' => array(
       'cck_blocks' => array(
         'label' => 'hidden',
@@ -342,9 +342,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_no_target_message'.
-  $field_instances['node-target-field_no_target_message'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_no_target_message'.
+  $field_instances['node-match_to_target-field_no_target_message'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -395,9 +395,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_reference_to_campaign'.
-  $field_instances['node-target-field_reference_to_campaign'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_reference_to_campaign'.
+  $field_instances['node-match_to_target-field_reference_to_campaign'] = array(
+    'bundle' => 'match_to_target',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -443,9 +443,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-field_thank_you_pages'.
-  $field_instances['node-target-field_thank_you_pages'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-field_thank_you_pages'.
+  $field_instances['node-match_to_target-field_thank_you_pages'] = array(
+    'bundle' => 'match_to_target',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -489,9 +489,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-layout'.
-  $field_instances['node-target-layout'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-layout'.
+  $field_instances['node-match_to_target-layout'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -541,9 +541,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-layout_background_image'.
-  $field_instances['node-target-layout_background_image'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-layout_background_image'.
+  $field_instances['node-match_to_target-layout_background_image'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
@@ -615,9 +615,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-layout_headline'.
-  $field_instances['node-target-layout_headline'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-layout_headline'.
+  $field_instances['node-match_to_target-layout_headline'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -669,9 +669,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-opengraph_meta_image'.
-  $field_instances['node-target-opengraph_meta_image'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-opengraph_meta_image'.
+  $field_instances['node-match_to_target-opengraph_meta_image'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
@@ -742,9 +742,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-pgbar_default'.
-  $field_instances['node-target-pgbar_default'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-pgbar_default'.
+  $field_instances['node-match_to_target-pgbar_default'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -821,9 +821,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-recent_supporters'.
-  $field_instances['node-target-recent_supporters'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-recent_supporters'.
+  $field_instances['node-match_to_target-recent_supporters'] = array(
+    'bundle' => 'match_to_target',
     'custom_add_another' => '',
     'custom_remove' => '',
     'default_value' => array(
@@ -880,9 +880,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-target-supporter_tags'.
-  $field_instances['node-target-supporter_tags'] = array(
-    'bundle' => 'target',
+  // Exported field_instance: 'node-match_to_target-supporter_tags'.
+  $field_instances['node-match_to_target-supporter_tags'] = array(
+    'bundle' => 'match_to_target',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Supporters submitting this form will be automatically tagged with these tags.',

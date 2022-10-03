@@ -12,13 +12,13 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'title' => 'Default target action',
+  'title' => 'Default Match to Target Form',
   'log' => '',
   'status' => 0,
   'comment' => 0,
   'promote' => 0,
   'sticky' => 0,
-  'type' => 'target',
+  'type' => 'match_to_target',
   'language' => 'en',
   'created' => 1343052466,
   'tnid' => 0,
@@ -35,7 +35,7 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
   'field_admin_title' => array(
     'und' => array(
       0 => array(
-        'value' => 'Default target action - DO NOT DELETE',
+        'value' => 'Default Match to Target Form TEMPLATE - DO NOT DELETE',
         'format' => NULL,
       ),
     ),
@@ -135,7 +135,8 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
     ),
   ),
   'path' => array(
-    'pathauto' => TRUE,
+    'pathauto' => FALSE,
+    'alias' => 'content/default-match-target-form-template-do-not-delete',
   ),
   'webform' => array(
     'next_serial' => 1,
@@ -177,7 +178,66 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
       0 => 1,
       1 => 2,
     ),
-    'emails' => array(),
+    'emails' => array(
+      1 => array(
+        'eid' => 1,
+        'email' => 3,
+        'subject' => 'Thank you for your support!',
+        'from_name' => 'default',
+        'from_address' => 'default',
+        'template' => '<p>Hi [submission:values:first_name],</p>
+<p>Thank you for supporting us!</p>
+<p>Have a great day!<br>
+	Your Supporter Service Team</p>
+',
+        'excluded_components' => array(),
+        'html' => 1,
+        'attachments' => 0,
+        'exclude_empty' => 0,
+        'extra' => FALSE,
+        'status' => 0,
+      ),
+      2 => array(
+        'eid' => 2,
+        'email' => 3,
+        'subject' => 'Please confirm your email address!',
+        'from_name' => 'default',
+        'from_address' => 'default',
+        'template' => '<p>Hi [submission:values:first_name],</p>
+<p>Almost there! Just one more click to confirm your support: [submission:confirm_url]</p>
+<p>Best,<br>
+	Your Supporter Service Team</p>
+',
+        'excluded_components' => array(),
+        'html' => 1,
+        'attachments' => 0,
+        'exclude_empty' => 0,
+        'extra' => FALSE,
+        'status' => 0,
+      ),
+      3 => array(
+        'eid' => 3,
+        'email' => 'you@example.com',
+        'subject' => 'New submission!',
+        'from_name' => 'default',
+        'from_address' => 'default',
+        'template' => '<p>Submitted on [current-date:short]</p>
+<p>Submitted by [submission:values:first_name] [submission:values:last_name]</p>
+<p>Submitted values are:</p>
+<p>[submission:values]</p>
+<p>The results of this submission may be viewed at:</p>
+<p>[submission:url]</p>
+<p><br>
+	Have a great day! ☺ ☀</p>
+',
+        'excluded_components' => array(),
+        'html' => 1,
+        'attachments' => 0,
+        'exclude_empty' => 0,
+        'extra' => FALSE,
+        'status' => 0,
+      ),
+    ),
     'components' => array(
       6 => array(
         'cid' => 6,
@@ -421,8 +481,8 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
     ),
     'conditionals' => array(),
   ),
-  'public_title' => 'Default target action',
-  'admin_title' => 'Default target action - DO NOT DELETE',
+  'public_title' => 'Default Match to Target Form',
+  'admin_title' => 'Default Match to Target Form TEMPLATE - DO NOT DELETE',
   'date' => '2012-07-23 16:07:46 +0200',
   'user_uuid' => '56467711-2095-4fa9-b5b2-68eb05f166f7',
 );
