@@ -270,7 +270,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
     'custom_add_another' => '',
     'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Add a large main image or a video to your match_to_target action.',
+    'description' => 'Add a large main image or a video to your action.',
     'display' => array(
       'cck_blocks' => array(
         'label' => 'hidden',
@@ -637,6 +637,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 17,
@@ -752,9 +753,16 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'state' => 1,
         'options' => array(
           'display' => array(
+            'autostart' => 1,
             'template' => 'pgbar',
           ),
-          'pgbar_default__und__0__options__active_tab' => 'edit-pgbar-default-und-0-options-target',
+          'pgbar_default__und__0__options__active_tab' => 'edit-pgbar-default-und-0-options-texts',
+          'source' => array(
+            'add_nids' => array(),
+            'enable_external_url' => 0,
+            'external_url' => '',
+            'find_at' => '',
+          ),
           'target' => array(
             'offset' => 0,
             'target' => array(
@@ -769,9 +777,9 @@ function campaignion_match_to_target_type_field_default_field_instances() {
           ),
           'texts' => array(
             'full_intro_message' => 'Thanks for your support!',
-            'full_status_message' => 'We’ve reached our goal of !target emails.',
-            'intro_message' => 'We have to send !target emails to win this campaign.',
-            'status_message' => '!current of !target emails have been sent. Will you help us send another !needed?',
+            'full_status_message' => 'We’ve reached our goal of !target messages.',
+            'intro_message' => 'Our target is !target.',
+            'status_message' => 'We’ve collected !current of !target messages of support. Will you help us send another !needed?',
           ),
         ),
       ),
@@ -928,7 +936,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Add a large main image or a video to your target action.');
+  t('Add a large main image or a video to your action.');
   t('Add an image to be shown on your social media teasers.');
   t('Body');
   t('Counter');

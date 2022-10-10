@@ -75,6 +75,7 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
   ),
   'layout' => array(),
   'layout_background_image' => array(),
+  'layout_headline' => array(),
   'opengraph_meta_image' => array(),
   'pgbar_default' => array(
     'und' => array(
@@ -92,10 +93,10 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
             'offset' => 0,
           ),
           'texts' => array(
-            'intro_message' => 'We have to send !target emails to win this campaign.',
-            'status_message' => '!current of !target emails have been sent. Will you help us send another !needed?',
+            'intro_message' => 'Our target is !target.',
+            'status_message' => 'We have collected !current of !target messages of support. Will you help us send another !needed?',
             'full_intro_message' => 'Thanks for your support!',
-            'full_status_message' => 'We’ve reached our goal of !target emails.',
+            'full_status_message' => 'We’ve reached our goal of !target messages.',
           ),
           'source' => array(
             'add_nids' => array(),
@@ -127,7 +128,6 @@ function campaignion_match_to_target_type_uuid_features_default_content() {
     ),
   ),
   'supporter_tags' => array(),
-  'layout_headline' => array(),
   'metatags' => array(
     'en' => array(
       'article:published_time' => array(),
