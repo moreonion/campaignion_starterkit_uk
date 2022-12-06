@@ -228,7 +228,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -439,7 +439,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'use_select2' => FALSE,
       ),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -611,7 +611,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -637,9 +637,8 @@ function campaignion_match_to_target_type_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 17,
       ),
       'teaser' => array(
@@ -739,7 +738,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -792,7 +791,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'module' => 'pgbar',
         'settings' => array(),
         'type' => 'pgbar',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -825,7 +824,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'pgbar',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -852,7 +851,7 @@ function campaignion_match_to_target_type_field_default_field_instances() {
         'module' => 'recent_supporters',
         'settings' => array(),
         'type' => 'recent_supporters',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'default' => array(
         'label' => 'hidden',
