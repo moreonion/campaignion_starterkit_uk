@@ -14,8 +14,8 @@ include_once 'campaignion_match_to_target_type.features.inc';
  */
 function campaignion_match_to_target_type_campaignion_action_info() {
   $types['match_to_target'] = array(
-    'wizard_class' => '\\Drupal\\campaignion_email_to_target\\Wizard\\Wizard',
-    'action_class' => '\\Drupal\\campaignion_email_to_target\\Action',
+    'wizard_class' => '\\Drupal\\campaignion_email_to_target\\Wizard\\WizardNoTestMode',
+    'action_class' => '\\Drupal\\campaignion_email_to_target\\ActionNoTestMode',
     'thank_you_page' => array(
       'type' => 'thank_you_page',
       'reference' => 'field_thank_you_pages',
